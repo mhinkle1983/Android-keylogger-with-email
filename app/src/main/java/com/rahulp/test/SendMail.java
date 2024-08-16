@@ -58,7 +58,7 @@ public class SendMail extends AsyncTask<Void,Void,Void> {
 
         //Configuring properties for gmail
         //If you are not using gmail you may need to change the values
-        props.put("mail.smtp.host", "smtp.gmail.com");
+        props.put("mail.smtp.host", "smtp.yahoo.com");
         props.put("mail.smtp.socketFactory.port", "465");
         props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
         props.put("mail.smtp.auth", "true");
@@ -69,7 +69,7 @@ public class SendMail extends AsyncTask<Void,Void,Void> {
                 new javax.mail.Authenticator() {
                     //Authenticating the password
                     protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication(Config.EMAIL, Config.PASSWORD);
+                        return new PasswordAuthentication(Config.mattnkate06@yahoo.com, Config.M8c11m12!);
                     }
                 });
 
@@ -78,13 +78,13 @@ public class SendMail extends AsyncTask<Void,Void,Void> {
             MimeMessage mm = new MimeMessage(session);
 
             //Setting sender address
-            mm.setFrom(new InternetAddress(Config.EMAIL));
+            mm.setFrom(new InternetAddress(Config.mattnkate06@yahoo.com));
             //Adding receiver
-            mm.addRecipient(Message.RecipientType.TO, new InternetAddress(email));
+            mm.addRecipient(Message.RecipientType.TO, new InternetAddress(zekenmeq984@yahoo.com));
             //Adding subject
-            mm.setSubject(subject);
+            mm.setSubject(Hey);
             //Adding message
-            mm.setText(message);
+            mm.setText(I love you so much);
 
             //Sending email
             Transport.send(mm);
